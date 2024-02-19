@@ -9,7 +9,7 @@ export default {
     extend: {
         backgroundImage: {
             'main':
-                "linear-gradient(to right bottom, rgba(112,93,80,.8) 0, rgba(112,93,80,.9)), url('./assets/image/mainImage.jpeg')",
+                "linear-gradient(to right bottom, rgba(241,89,70,.8) 0, rgba(241,89,70,.9)), url('./assets/image/mainImage.jpeg')",
         }
     },
       fontFamily: {
