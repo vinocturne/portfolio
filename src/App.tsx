@@ -1,12 +1,11 @@
-import {BrowserRouter} from "react-router-dom";
-import Routes from './router/index'
+import { BrowserRouter } from 'react-router-dom';
+import Routes from './router/index';
 function App() {
-
   return (
-    <BrowserRouter basename={'/'}>
-        <Routes />
+    <BrowserRouter basename={'/portfolio'}>
+      <Routes />
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;
