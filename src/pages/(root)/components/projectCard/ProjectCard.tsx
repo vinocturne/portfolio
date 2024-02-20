@@ -19,17 +19,19 @@ export default function ProjectCard({ data }: { data: ProjectData }) {
     slidesToScroll: 1,
     slidesToShow: 1,
     adaptiveHeight: true,
-    className: 'w-[70%] max-w-[400px]',
+    className: 'w-[70%] max-w-[400px] sm:w-[100%] max-sm:w-[100%]',
   }
   return (
     <div
-      className={
-        'bg-white rounded-md w-[100%] max-w-[1100px] px-[24px] py-[36px] flex flex-col items-center sm:max-h-[2000px] shadow-2xl'
-      }
+      className={'bg-white rounded-md w-[90%] max-w-[1100px] px-[24px] py-[36px] flex flex-col items-center shadow-2xl'}
     >
       <span className={'text-4xl font-han'}>{data.title}</span>
       <span className={'text-lg font-noto'}>{data.period}</span>
-      <div className={'w-[100%] flex mt-[24px]'}>
+      <div
+        className={
+          'w-[100%] flex lg:flex-row md:flex-row sm:flex-col max-sm:flex-col max-sm:items-center max-sm:gap-[24px] mt-[24px] sm:items-center md:items-start sm:gap-[24px]'
+        }
+      >
         <div className={'w-[50%] flex justify-center items-center '}>
           <Slider {...sliderOption}>
             {data.image.map((url, index) => (
@@ -37,7 +39,7 @@ export default function ProjectCard({ data }: { data: ProjectData }) {
             ))}
           </Slider>
         </div>
-        <div className={'w-[50%] flex flex-col gap-[16px]'}>
+        <div className={'w-[50%] flex flex-col gap-[16px] sm:w-[80%] max-sm:w-[80%]'}>
           <p className={'text-lg font-bold'}>{data.roll}</p>
           <div className={'w-[50%] h-[3px] bg-orange-500'} />
           <div className={'flex gap-[6px] items-center'}>
