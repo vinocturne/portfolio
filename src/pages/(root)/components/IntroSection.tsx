@@ -8,13 +8,13 @@ export default function IntroSection() {
     >
       <section
         className={
-          'absolute left-[50%] translate-x-[-50%] max-w-[1140px] mx-auto mt-[130px] font-han flex flex-col items-center gap-[20px]'
+          'absolute left-[50%] translate-x-[-50%] max-w-[1140px] w-[100%] mx-auto mt-[130px] font-han flex flex-col items-center gap-[20px]'
         }
       >
         <span className={'text-white text-7xl'}>신건희</span>
         <span className={'text-white text-5xl'}>웹 프론트엔드 개발자</span>
         <section
-          className={'w-[1140px] mt-[20px] mx-auto font-noto flex flex-col items-center justify-center gap-[30px]'}
+          className={'max-w-[1140px] mt-[20px] mx-auto font-noto flex flex-col items-center justify-center gap-[30px]'}
         >
           <div className={'w-[50px] h-[5px] bg-orange-500'} />
           <div className={'flex flex-col text-white items-center justify-center gap-[5px] text-xl'}>

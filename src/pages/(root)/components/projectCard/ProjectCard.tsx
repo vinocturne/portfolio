@@ -30,7 +30,7 @@ export default function ProjectCard({ data }: { data: ProjectData }) {
       <span className={'text-4xl font-han'}>{data.title}</span>
       <span className={'text-lg font-noto'}>{data.period}</span>
       <div className={'w-[100%] flex mt-[24px]'}>
-        <div className={'w-[50%] flex justify-center items-center'}>
+        <div className={'w-[50%] flex justify-center items-center '}>
           <Slider {...sliderOption}>
             {data.image.map((url, index) => (
               <img src={url} key={`${data.title}_${index}`} alt={`${data.title}_${index}`} />
@@ -91,6 +91,7 @@ export default function ProjectCard({ data }: { data: ProjectData }) {
                       <>
                         <img
                           src={'google_play.svg'}
+                          alt={'google_play'}
                           width={30}
                           onClick={() => window.open(el.url)}
                           className={'cursor-pointer hover:scale-150 transition-all'}
@@ -101,6 +102,7 @@ export default function ProjectCard({ data }: { data: ProjectData }) {
                       <>
                         <img
                           src={'www.svg'}
+                          alt={'web'}
                           width={30}
                           onClick={() => window.open(el.url)}
                           className={'cursor-pointer hover:scale-150 transition-all'}
