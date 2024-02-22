@@ -7,6 +7,7 @@ export default function Header() {
     { title: 'Tech Stack', to: 'stack' },
     { title: 'Project', to: 'project' },
     { title: 'Career', to: 'career' },
+    { title: 'Contact', to: 'contact' },
   ]
 
   useEffect(() => {
@@ -24,10 +25,9 @@ export default function Header() {
     }
   }, [])
 
-  console.log(isScrolled)
   return (
     <header
-      className={`fixed w-[100%] top-0 right-0 left-0  flex z-[999] px-[12px] py-[10px] justify-center items-center bg-transparent ${isScrolled ? 'bg-[#7D4E57D9]' : ''}`}
+      className={`fixed w-[100%] top-0 right-0 left-0  flex z-[999] px-[12px] py-[10px] justify-center items-center  z-[9999] ${isScrolled ? 'bg-[#7D4E57AE]' : 'bg-transparent'}`}
     >
       <div className={'max-w-[1140px] w-[100%] flex justify-between items-center'}>
         <div
