@@ -11,13 +11,13 @@ export default function IntroSection() {
           'absolute left-[50%] translate-x-[-50%] max-w-[1140px] w-[100%] mx-auto mt-[130px] font-han flex flex-col items-center gap-[20px]'
         }
       >
-        <span className={'text-white text-7xl'}>신건희</span>
-        <span className={'text-white text-5xl'}>웹 프론트엔드 개발자</span>
+        <span className={'text-white text-6xl md:text-7xl'}>신건희</span>
+        <span className={'text-white text-4xl md:text-5xl'}>웹 프론트엔드 개발자</span>
         <section
           className={'max-w-[1140px] mt-[20px] mx-auto font-noto flex flex-col items-center justify-center gap-[30px]'}
         >
           <div className={'w-[50px] h-[5px] bg-orange-500'} />
-          <div className={'flex flex-col text-white items-center justify-center gap-[5px] text-xl'}>
+          <div className={'flex flex-col text-white items-center justify-center gap-[5px] text-md md:text-xl'}>
             <span>항상 새로 배우는 느낌으로</span>
             <span>최선을 다하는 프론트엔드 개발자입니다.</span>
             <span>낙천적이고 꼼꼼한 성격이 장점입니다.</span>

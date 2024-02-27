@@ -29,8 +29,8 @@ export default function CareerSection() {
     <section id={'career'} className={'bg-[#364156] py-16'}>
       <article className={'mx-auto max-w-[1140px] flex flex-col items-center gap-[60px] '}>
         <span className={'font-han text-5xl text-white'}>Career</span>
-        <div className={'w-[90%] max-w-[1100px] text-white flex justify-end'}>
-          <div className={'border-l-white w-[50%] border-l-[2px] flex flex-col gap-[36px]'}>
+        <div className={'w-[90%] max-w-[1100px] text-white flex flex-start md:justify-end'}>
+          <div className={'border-l-white w-[100%] md:w-[50%] border-l-[2px] flex flex-col gap-[36px]'}>
             {companyData.map((company) => {
               return (
                 <div
@@ -42,7 +42,7 @@ export default function CareerSection() {
                     window.open(company.website)
                   }}
                 >
-                  <img src={company.companyLogo} className={'rounded-2xl bg-white p-[10px]'} width={85} />
+                  <img src={company.companyLogo} alt={'logo'} className={'rounded-2xl bg-white p-[10px]'} width={85} />
                   <div className={'flex flex-col gap-[6px]'}>
                     <span className={'text-2xl font-bold'}>{company.companyName}</span>
                     <span className={'text-md'}>{company.period}</span>
