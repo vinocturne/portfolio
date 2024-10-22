@@ -1,4 +1,4 @@
-import { CopyToClipboard } from 'react-copy-to-clipboard';
+import { CopyToClipboard } from 'react-copy-to-clipboard'
 export default function ContactSection() {
   return (
     <section id={'contact'} className={'bg-white py-16'}>
@@ -24,7 +24,7 @@ export default function ContactSection() {
               'text-xl border-[1px] px-[24px] py-[12px] rounded-2xl flex gap-[12px] bg-gray-800 text-white items-center hover:bg-gray-600 active:scale-[90%] transition-all'
             }
             href={'신건희_프론트엔드_이력서.pdf'}
-            download
+            download="신건희_프론트엔드_이력서.pdf"
           >
             <img src={'download.svg'} />
             이력서 다운로드
@@ -32,5 +32,5 @@ export default function ContactSection() {
         </div>
       </article>
     </section>
-  );
+  )
 }
