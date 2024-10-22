@@ -23,7 +23,7 @@ export default function ContactSection() {
             className={
               'text-xl border-[1px] px-[24px] py-[12px] rounded-2xl flex gap-[12px] bg-gray-800 text-white items-center hover:bg-gray-600 active:scale-[90%] transition-all'
             }
-            href={'신건희_프론트엔드_이력서.pdf'}
+            href={'이력서.pdf'}
             download="신건희_프론트엔드_이력서.pdf"
           >
             <img src={'download.svg'} />
